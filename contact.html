@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Adding Some meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page">
+  <!-- Title -->
+  <title>Contact Us</title>
+  <!-- Linking CSS -->
+  <link rel="stylesheet" href="./css/stylecontact.css">
+
+  <!-- Adding Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+  <!--Adding jquery  -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  <!-- Adding our custom js file -->
+  <script src="./js/custom.js"></script>
+
+</head>
+<body>
+  <!-- Adding header and id to load header.html -->
+  <header id="header"></header>
+  <div class="background">
+
+  <!-- Contact form -->
+  <main class="contact-form">
+    <h1>Contact Us</h1>
+    <form>
+
+      <!-- name input -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- email input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- subject input -->
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <!-- message input -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      
+      <!-- submit button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <footer id="footer"></footer>
+</body>
+</html>

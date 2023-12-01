@@ -1,0 +1,169 @@
+
+/* styling main section */
+.main-container{
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.207),0 2px 2px rgba(0, 0, 0, 0.207);
+    font-family: 'Oswald', sans-serif;
+}
+/* common styling for section */
+.section{
+    display: flex;
+    margin-bottom: 32px;
+}
+/* common styling for image */
+.section .image {
+    width: 50%;
+    display: flex;
+    background-color: black;
+}
+.section .image img {
+    width: 100%;
+}
+
+/* common styling for text */
+.section .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #d4e9e2;
+    letter-spacing: 1px;
+}
+.text h1 , p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* styling first section */
+.text h1 {
+    color: #1e3032;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.text p{
+    color: #1e3932;
+    text-align: center;
+    font-weight: 550;
+    margin-bottom: 32px;
+    font-size: 19px;
+}
+.text .button {
+    padding: 7px 16px;
+    border-radius: 50px;
+    border: 1px solid;
+}
+.text .button a {
+    color: #1e3932;
+    font-weight: 600;
+    letter-spacing: 0;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+/* adding style on hover */
+.text .button :hover {
+    padding: 7px 32px;
+}
+
+
+/* Styling second section */
+.second .text h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.second .text p {
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.thumb{
+    position: relative;
+    padding: 3%;
+    padding-left: 0%;
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+/* styling on hover */
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+/* styling images */
+.thumb li img{
+    max-width: 60px;
+}
+.tpackimg{
+    width: 50%;
+}
+
+
+
+/* Styling third section */
+.third .text {
+    background-color: #006241;
+    background-image: url(../img/backgroundimg1);
+    width: 100%;
+    height: 500px;
+    background-repeat:round;
+    position: relative;
+}
+.third .text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.third .text p{
+    letter-spacing: 1px;
+    color: white;
+    font-size: 24px;
+}
+.third .text .button {
+    border-color: white;
+    align-items: center;
+}
+.third .text .button a {
+    color: white;
+    
+}
+#textforno1{
+    background-color: black;
+    color: beige;
+}
+
+/* Adding media queries for responsive design */
+@media (max-width:420px){
+    .text h1 {
+        font-size: 10px;
+    }
+}
+@media( max-width:920px){
+    .section{
+        flex-direction: column;
+    }
+    .section .image {
+        width: 100%;
+    }
+    .section .text {
+        width: 100%;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
+    .text p {
+        letter-spacing: 1px;
+    }
+    .bottom p{
+        font-size: 14px;
+    }
+}
+

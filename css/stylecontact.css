@@ -1,0 +1,77 @@
+/* General styles */
+body {
+    font-family: 'Oswald', sans-serif ;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+.background 
+{
+  background-image: url(../img/backgroundimg2);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+  
+  /* Main content styles */
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+ /*H1*/ 
+  h1{
+    text-align: center;
+  }
+  
+  /* Contact form styles */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 0px;
+    color: #fefefe;
+  }
+  
+  /* styling form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styling labels */
+  label {
+    margin-top: 10px;
+  }
+  
+  /* styling textarea */
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* styling buttons */
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 4%;
+  }
+  
+  /* hover styling */
+  button:hover {
+    background-color: #555;
+  }
+  

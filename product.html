@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Adding some meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="product page">
+    <!-- title -->
+    <title>Product</title>
+    <!-- linking CSS file -->
+    <link rel="stylesheet" href="./css/styleproduct.css">
+    <!-- Adding fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <!--Adding jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Adding custom.js file -->
+    <script src="./js/custom.js"></script>
+</head>
+<body>
+    <!-- Adding header and id to load header.html file -->     
+    <header id="header"></header>
+    <section class="product-category">
+        <h2>Fruits</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="img/apple" alt="Fresh Apple">
+                <h3>Fresh Apple</h3>
+                <p class="product-description">Enjoy the crisp sweetness of our locally sourced apples. Perfect for snacking or adding to your favorite recipes.</p>
+                <p class="product-price">$2.99 per LB</p>
+                <button class="add-to-cart-button"  onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/mango.jpg" alt="Fresh mango">
+                <h3>Fresh Mango</h3>
+                <p class="product-description">Delicious tropical fruit known for its sweet and juicy flavor. Rich in vitamins and perfect for refreshing snacks.</p>
+                <p class="product-price">7.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/banana" alt="Fresh Banana">
+                <h3>Fresh Banana</h3>
+                <p class="product-description">A popular yellow fruit, bananas are packed with essential nutrients, providing a quick energy
+                    boost and a naturally sweet taste.</p>
+                <p class="product-price">$0.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/grape.jpg" alt="Fresh Grape">
+                <h3>Fresh Grape</h3>
+                <p class="product-description">Small, sweet, and available in various colors, grapes make for a delightful and healthy snack.
+                    Enjoy them fresh or in salads.</p>
+                <p class="product-price">$2.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/orange.jpg" alt="Fresh Orange">
+                <h3>Fresh Orange</h3>
+                <p class="product-description">Oranges are a citrus delight, offering a burst of refreshing citrus flavor. Packed with vitamin C,
+                    they are great for supporting immune health.</p>
+                <p class="product-price">$2.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/avocado.jpg" alt="Fresh Avocado">
+                <h3>Fresh Avocado</h3>
+                <p class="product-description">Known for its creamy texture and nutritional value, avocados are versatile and can be used in
+                    salads, sandwiches, and guacamole.</p>
+                <p class="product-price">$5.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/kiwi.webp" alt="Fresh Kiwi">
+                <h3>Fresh Kiwi</h3>
+                <p class="product-description">Small, fuzzy, and full of flavor, kiwi is known for its vibrant green color and high vitamin C
+                    content. Enjoy it as a snack or in salads.</p>
+                <p class="product-price">$3.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/watermelon.jpeg" alt="Fresh Watermelon">
+                <h3>Fresh Watermelon</h3>
+                <p class="product-description">A classic summer fruit, watermelon is hydrating and delicious. Enjoy it in slices or as a
+                    refreshing beverage.</p>
+                <p class="product-price">$4.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vegetables section -->
+    <section class="product-category">
+        <h2>Vegetables</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="img/carrot.png" alt="Fresh Carrot">
+                <h3>Fresh Carrot</h3>
+                <p class="product-description">Crunchy and nutritious carrots, perfect for salads, snacks, or cooking.</p>
+                <p class="product-price">$1.49 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/lettuce.webp" alt="Fresh Lettuce">
+                <h3>Fresh Lettuce</h3>
+                <p class="product-description">Crunchy and refreshing, lettuce is a versatile leafy green that forms the base of many salads.
+                    It's a great source of vitamins and minerals.</p>
+                <p class="product-price">$1.49 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/onion.jpeg" alt="Fresh Onion">
+                <h3>Fresh Onion</h3>
+                <p class="product-description">Onions add flavor and aroma to a wide variety of dishes. They come in different varieties,
+                    including red, white, and yellow.</p>
+                <p class="product-price">$4.49 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/tomato.jpeg" alt="Fresh Tomato">
+                <h3>Fresh Tomato</h3>
+                <p class="product-description">Tomatoes are juicy and flavorful, commonly used in salads, sandwiches, and sauces. They are rich
+                    in vitamins and antioxidants.</p>
+                <p class="product-price">$1.19 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/bellpepper.jpg" alt="Fresh Bellpepper">
+                <h3>Fresh Bellpepper</h3>
+                <p class="product-description">Bell peppers come in various colors and add sweetness and crunch to dishes. They are rich in
+                    vitamins A and C.</p>
+                <p class="product-price">$3.49 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/spinach.jpg" alt="Fresh spinach">
+                <h3>Fresh Spinach</h3>
+                <p class="product-description">Spinach is a nutrient-packed leafy green that can be enjoyed in salads, smoothies, or cooked
+                    dishes. It's an excellent source of iron and vitamins.</p>
+                <p class="product-price">$1.49 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/jalapeno.jpg" alt="Fresh Jalalpeno">
+                <h3>Fresh Jalapeno</h3>
+                <p class="product-description">Jalapenos add a spicy kick to your dishes. They can be used fresh or pickled and are a popular
+                    ingredient in many cuisines.</p>
+                <p class="product-price">$2.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="img/olives.webp" alt="Fresh Olives">
+                <h3>Fresh Olives</h3>
+                <p class="product-description">Olives are a versatile fruit used in various Mediterranean dishes. They come in different
+                    varieties, such as black and green.</p>
+                <p class="product-price">$2.99 per LB</p>
+                <button class="add-to-cart-button" onclick="addToCart(this)">Add to Cart</button>
+                </div>
+        </div>
+    </section>
+    </body>
+     <!-- Adding footer and id to load footer.html file -->     
+    <footer id="footer"></footer>
+
+    <script>
+        function addToCart(button) {
+    button.classList.add('added-to-cart');
+    button.innerHTML = 'Added';
+}
+    </script>
+</html>

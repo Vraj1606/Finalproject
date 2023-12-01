@@ -1,0 +1,57 @@
+/* styling header */
+header{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    background-color: #31b42f;
+    width: 100%;
+}
+
+/* styling head or logo image */
+.headimg
+{
+    padding: 2%;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.headimg2{
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+/* styling ul */
+.headmenu ul
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+    width: 100%;
+    height: auto;
+}
+.headmenu ul li{
+    list-style-type: none;
+    margin-bottom: 3%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.headmenu ul li a{
+    color: #FEFEFE;
+    text-decoration: none;
+
+}
+
+/* styling ul on hover */
+.headmenu ul li a:hover{
+    color: whitesmoke;
+}
+
+/* Adding media queries for responsive design */
+@media (max-width:347px){
+    .headmenu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
